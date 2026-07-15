@@ -1,0 +1,1 @@
+export function LoadingState({ rows = 4 }: { rows?: number }) { return <div className="card loading-card"><div className="skeleton title"/>{Array.from({length: rows}).map((_,i)=><div className="skeleton row" key={i}/>)}</div>; }
